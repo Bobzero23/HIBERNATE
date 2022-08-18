@@ -25,7 +25,15 @@
  * is gonna seem like this ---> Configuration con = new Configuration().configure("PassTheName").addAnnotatedClass(ClassName.class);                       
  * As you see the method said add annotated class so we gonna have to annotate our class to because we are working in the different clases
  * Yeah not only we annotate the class we also have to annotate inside the class 
- * Yeah the annotation also have their imports so BE CAREFUL 
+ * Yeah the annotation also have their imports so BE CAREFUL
+ * 
+ * WHAT HAPPENNED IN THE CODE IS
+ * All we was trying to do is creating a table in the Mysql but honestly I thought it'd easy but anyway..
+ * The thing is saving a data from the classes to Mysql is a transaction so for that we have to use the object
+ * of Transaction that is why we did all that stuff and the objects above transaction are simply we have to find 
+ * a class that implements all of these interface, I didnt have to be this hard bro come on...
+ * Oh one more thing you gonna have to import that one too...hhhhh 
+ *  
  * 
  * 
  *

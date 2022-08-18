@@ -1,9 +1,9 @@
 package demo;
 
-
 /*imports*/
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 /*main class*/
@@ -19,9 +19,15 @@ public class Alien_main
     	bobzero.setaColor("Black");
     	
     	/*Configuring the connection*/
-    	Configuration con = new Configuration().configure();
+    	Configuration con = new Configuration().configure().addAnnotatedClass(Alien.class);
     	SessionFactory sFactory = con.buildSessionFactory();
     	Session session = sFactory.openSession();
+    	
+    	/*Transaction*/
+    	Transaction tran = session.beginTransaction();
     	session.save(bobzero);
+    	tran.commit();
+    	
+    	
     }
 }
