@@ -1,7 +1,12 @@
 package demo;
 
+import javax.persistence.Entity;
+
+/*add annotation to allow the class to use databases*/
+@Entity
 public class Alien {
 
+	
 	private int aId;
 	private String aName;
 	private String aColor;

@@ -21,7 +21,11 @@
  * CONNECTION WITH HIBERNATE.CFG.XML
  * While creating the Configuration object just add this method and pass the name of the file you created 
  * is gonna seem like this --->	Configuration con = new Configuration().configure("PassTheName");
- * 
+ * Yeah that's not all you also have to add another method which will have the name of you class
+ * is gonna seem like this ---> Configuration con = new Configuration().configure("PassTheName").addAnnotatedClass(ClassName.class);                       
+ * As you see the method said add annotated class so we gonna have to annotate our class to because we are working in the different clases
+ * Yeah not only we annotate the class we also have to annotate inside the class 
+ * Yeah the annotation also have their imports so BE CAREFUL 
  * 
  * 
  *
