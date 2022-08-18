@@ -4,6 +4,8 @@ package demo;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+
+/*POJO class*/
 /*add annotation to allow the class to use databases*/
 @Entity
 public class Alien {
