@@ -27,8 +27,6 @@ public class Alien_main
     	Transaction tran = session.beginTransaction();
     	session.save(bobzero);
     	tran.commit();
-  
-  	
     	
     }
 }

@@ -33,6 +33,11 @@
  * of Transaction that is why we did all that stuff and the objects above transaction are simply we have to find 
  * a class that implements all of these interface, I didnt have to be this hard bro come on...
  * Oh one more thing you gonna have to import that one too...hhhhh 
+ * 
+ * CREATE TABLE OUTOMATICALLY
+ * For that we gonna have to use hibernate.cfg file
+ * Just open the hibernate config file and add this property
+ *  <property name="hbm2ddl.auto">update</property>
  *  
  * 
  * 
