@@ -1,0 +1,8 @@
+START WITH H2 DATABASE
++ after putting the dependencies
++ in application.properties you gonna have to enable and configure it
++ run the app and go to the online h2-console endpoint and see if the database is working
++ create the data.sql file and there you will initialize the database i.e tables and e.t.c
+    Note: there on the website you can run your own queries
+    Note: the other thing is better to insert your columns in data.sql instead of querying them online
+    because when you query them online and as long as you restart the server it deletes everything
