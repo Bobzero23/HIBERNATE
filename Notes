@@ -8,7 +8,13 @@ START WITH H2 DATABASE
     because when you query them online and as long as you restart the server it deletes everything
 
 START WITH SPRING JDBC
-+ Create a model(entity) class
++ Create a model(entity) class (@Data, @AllArgsConstructor, @NoArgsConstructor)
 + Create a new class call it blahBlahDao
 + Make the connection with database using JdbcTemplate (Autowire it or use constructor)
 + use the jdbc to write query and map it with the model class
++ At this point you must have been created the table and insert the values inside the data.sql
++ After that simply implement the CommandLineRunner and use the @Slf4J to get the log instance
++ then while implementing the methods of CommandLineRunner interface use the logger so we can see
+    the table
++ The table must be coming from the Model class which you just autowire it up there
+** I know is kinda mess
