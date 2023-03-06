@@ -6,3 +6,9 @@ START WITH H2 DATABASE
     Note: there on the website you can run your own queries
     Note: the other thing is better to insert your columns in data.sql instead of querying them online
     because when you query them online and as long as you restart the server it deletes everything
+
+START WITH SPRING JDBC
++ Create a model(entity) class
++ Create a new class call it blahBlahDao
++ Make the connection with database using JdbcTemplate (Autowire it or use constructor)
++ use the jdbc to write query and map it with the model class
